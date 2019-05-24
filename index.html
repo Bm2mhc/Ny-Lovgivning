@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Ny lovgivning</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!--JAVASCRIPTS 
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <!--jQuery to make easier http calls-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!--Import Handlebars-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="css/mystyles.css">
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!----Firebase
+    --------------------------------------------------->
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCBDhxn75PGSX1ZeksfUwxkYnGr77p37Gg",
+            authDomain: "slotshaven-bet.firebaseapp.com",
+            databaseURL: "https://slotshaven-bet.firebaseio.com",
+            projectId: "slotshaven-bet",
+            storageBucket: "slotshaven-bet.appspot.com",
+            messagingSenderId: "931978310597"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <main>
+        <nav>
+            <div class="nav-wrapper green">
+
+                <div class="container">
+                    <a href="#" class="brand-logo" size="7" style="font-family: 'Oswald';"
+                        id="home"><b>Ny Lovgivning</b></a>
+                    <a href="#" class="sidenav-trigger" data-target="slide_out"><i class="material-icons">menu</i></a>
+
+                    <ul class="hide-on-med-and-down right">
+
+                        <li id="menu-page-bet" ><a href="#bet" style="font-family: 'oswald'">Specielle odds</a></li>
+                        <li id="menu-page-regler"><a href="#regler" style="font-family: 'oswald'">Regler</a></li>
+                        <li id="menu-page-omos"><a href="#om os" style="font-family: 'oswald'">Om os</a></li>
+                        <li id="menu-page-kontakt"><a href="#kontakt" style="font-family: 'oswald'">Kontakt</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="slide_out">
+
+            <li id="menu-page-bet2"><a href="#bet">Specielle odds</a></li>
+            <li id="menu-page-regler2"><a href="#regler">Regler</a></li>
+            <li id="menu-page-omos2"><a href="#om os">Om os</a></li>
+            <li id="menu-page-kontakt2"><a href="#kontakt">Kontakt</a></li>
+
+        </ul>
+
+
+        <!--------------------------------------------------------------------------------------------------------------->
+        <div class="container" style="margin-top: 1%">
+            <div id="page-one">
+                <div class="row">
+                    <div class="col s12 l5 offset-l1">
+                        <img
+                            src="https://arcticwolf.com/wp-content/uploads/2018/01/LEGAL-300x300.png">
+                    </div>
+                    <div class="col s12 l6">
+
+                        <h4>Ny lovgivning</h4>
+                        <h5>En forstålige grundlov</h5>
+                        <p>Ny lovgining er en hel ny omskrivning af Grundloven.</p>
+                        <p>Ny lovgivning tager Grundloven og indeler paragraferne i overksuelige sektioner</p>
+                        <p>Ny lovgivning skal hjælpe dig forstå loven og er her så du altid kender</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page-regler">
+            <div class="row">
+                <div class="col s12 l4 offset-l2">
+                    <img width="370" height="300"
+                        src="https://images.unsplash.com/photo-1526865512088-555ece30eb44?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=300&h=300&fit=crop&ixid=eyJhcHBfaWQiOjF9">
+                </div>
+                <div class="col s12 l6">
+                    <h4>Regler</h4>
+                    <li>Du better penge</li>
+                    <li>Du vinder øl</li>
+                    <p>Det er så nemt</p>
+                    <li>Du har 14 dages retur ret</li>
+                    <li>Hvis du trækker pengene ud tidligere får du kun penge for det den er faldet til</li>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div id="page-omos">
+            <div class="row">
+                <div class="col s12 l4 offset-l2">
+                    <img width="370" height="300"
+                        src="https://slotshaven.dk/wp-content/uploads/2017/05/slotshaven-gymnasium-video.jpg"
+                        class="right">
+                </div>
+                <div class="col s12 l6">
+                    <h4>Om os</h4>"
+                    <h5>Skaberen</h5>
+                    <p>Jeg er en elev som vil bruge sine programmerings timer til noget</p>
+                    <p>Jeg kommer fra R klassen som er slagger klassen</p>
+                    <p>Vi gik fra 26-21 elever mellem 1-2g og det vil vi vinde penge på</p>
+                    <p>Derfor skabte jeg dette programmerings progjekt som jeg kunne bruge til eksamen</p>
+
+                    <h5>Slots bet</h5>
+                    <p>Slots bet er et firma der gør så man kan vinde øl på din venner</p>
+                    <p>I tilmelder jeres klasse og i kan vinde øl på karaktere og udsmidning</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div id="page-slotsnews">
+            <div class="row">
+                <div class="col s12 l6 offset-l2">
+                    <script>
+                        function SlotsNEWS() {
+
+                            $.getJSON("Slotsnews.json", function (json) {
+                                console.log(json); // this will show the info it in firebug console
+                            });
+                        }
+                    </script>
+                    <div class="col s12 l4"> <img
+                            src="https://www.slotsnews.dk/wp-content/uploads/2019/01/slotsnews_V2_X2.png">
+
+                    </div>
+                </div>
+
+                <div class="col s12 l4">
+
+                    <label>Filter</label>
+                    <select class="browser-default">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1" onclick="late()">Latest</option>
+                        <option value="2" onclick="first()">First</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+        </div>
+        </div>
+        </div>
+
+        <div id="page-kontakt">
+            <div class="row">
+                <div class="col s12 l4 offset-l2">
+                    <img width="300" height="300"
+                        src="https://img10.androidappsapk.co/300/b/4/5/com.sixplus.lectio.png">
+                </div>
+                <div class="col s12 l6">
+                    <h4>Kontakt</h4>
+                    <p>lectio : Marinus Hurni Christensen, 2r (SH)</p>
+                    <p>Lokale : 24</p>
+                    <p>20 gangen</p>
+
+                    <a href="#" class="black-text">Instagram : @marinus_h_christensen</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="page-bet">
+            <div class="row">
+                <div class="col s12 l2 offset-l1">
+                </div>
+                <div class="col s12 l9">
+
+                    <h4>Specielle ods</h4>
+
+                    <h5>Årets</h5>
+                    <p>Vil Malene finde en anden rektor enden skole start 2019/2020? Ja, 0.00 : Nej, 100.00</p>
+
+                    <h5>Månedens</h5>
+                    <p>Vil 3gerenes show være ligså dårligt som det sidste år? Ja, 1.00 : Nej, 20.00 </p>
+
+                    <h5>Dagens</h5>
+                    <p>Vil kantinen severe nachos i dag? Ja, 1.00 : Nej, 10.00</p>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+    </main>
+
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>Kontakt</h5>
+                    <a  href="https://www.instagram.com/marinus_h_christensen/" class="white-text">Marinus Hurni Christensen, 2r (SH)</a>
+                    <p>Lokale : 24</p>
+                    <p>20 gang</p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Links</h5>
+                    <ul>
+                        <li><a href="#" class="grey-text  text-lighten-3">Kontakt</a></li>
+                        <li><a href="#" class="grey-text  text-lighten-3">Job</a></li>
+                        <li><a href="#" class="grey-text  text-lighten-3">Bet</a></li>
+                        <li><a href="#" class="grey-text  text-lighten-3">SlotsNews</a></li>
+                        <li><a href="#" class="grey-text  text-lighten-3">om os</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align">&copy Marinus Hurni Christensen</div>
+        </div>
+    </footer>
+</body>
+
+
+
+
+
+<script>
+    const slide_menu = document.querySelectorAll(".sidenav");
+    M.Sidenav.init(slide_menu, {});
+
+    /*$('#menu-page-login').click(function () {
+        $('#page-login').animate({
+            width: 'toggle'
+        }, 350);
+        //$('#page-login').hide();
+
+    });*/
+
+    $('#menu-page-regler').click(function () {
+        $('#page-regler').show();
+        $('#page-one').hide();
+        $('#page-omos').hide();
+        $('#page-slotsnews').hide();
+        $('#page-kontakt').hide();
+        $('#page-bet').hide();
+        //$('#page-login').hide();ø
+    });
+
+    $('#home').click(function () {
+        $('#page-regler').hide();
+        $('#page-one').show();
+        $('#page-omos').hide();
+        $('#page-slotsnews').hide();
+        $('#page-kontakt').hide();
+        $('#page-bet').hide();
+        //$('#page-login').hide();ø
+    });
+
+    $('#menu-page-omos').click(function () {
+        $('#page-regler').hide();
+        $('#page-one').hide();
+        $('#page-omos').show();
+        $('#page-slotsnews').hide();
+        $('#page-kontakt').hide();
+        $('#page-bet').hide();
+        //$('#page-login').hide();ø
+    });
+
+    $('#menu-page-slotsnews').click(function () {
+        $('#page-login').hide();
+        $('#page-regler').hide();
+        $('#page-one').hide();
+        $('#page-omos').hide();
+        $('#page-slotsnews').hide();
+        $('#page-slotsnews').show();
+        $('#page-kontakt').hide();
+        $('#page-bet').hide();
+        //$('#page-login').hide();ø
+    });
+
+    $('#menu-page-regler2').click(function () {
+        $('#page-regler').show();
+        $('#page-one').hide();
+        $('#page-omos').hide();
+        $('#page-slotsnews').hide();
+        $('#page-kontakt').hide();
+        $('#page-bet').hide();
+        //$('#page-login').hide();ø
+    });
+
+    $('#menu-page-omos2').click(function () {
+        $('#page-regler').hide();
+        $('#page-one').hide();
+        $('#page-omos').show();
+        $('#page-slotsnews').hide();
+        $('#page-kontakt').hide();
+        $('#page-bet').hide();
+        //$('#page-login').hide();ø
+    });
+
+    $('#menu-page-slotsnews2').click(function () {
+        $('#page-regler').hide();
+        $('#page-one').hide();
+        $('#page-omos').hide();
+        $('#page-slotsnews').hide();
+        $('#page-slotsnews').show();
+        $('#page-kontakt').hide();
+        $('#page-bet').hide();
+        //$('#page-login').hide();ø
+    });
+
+    $('#menu-page-kontakt').click(function () {
+        $('#page-regler').hide();
+        $('#page-one').hide();
+        $('#page-omos').hide();
+        $('#page-slotsnews').hide();
+        $('#page-slotsnews').hide();
+        $('#page-kontakt').show();
+        $('#page-bet').hide();
+        //$('#page-login').hide();ø
+    });
+
+    $('#menu-page-kontakt2').click(function () {
+        $('#page-regler').hide();
+        $('#page-one').hide();
+        $('#page-omos').hide();
+        $('#page-slotsnews').hide();
+        $('#page-slotsnews').hide();
+        $('#page-kontakt').show();
+        $('#page-bet').hide();
+        //$('#page-login').hide();ø
+    });
+
+    $('#menu-page-bet').click(function () {
+        $('#page-regler').hide();
+        $('#page-one').hide();
+        $('#page-omos').hide();
+        $('#page-slotsnews').hide();
+        $('#page-slotsnews').hide();
+        $('#page-kontakt').hide();
+        $('#page-bet').show();
+        //$('#page-login').hide();ø
+    });
+
+    $('#menu-page-2').click(function () {
+        $('#page-regler').hide();
+        $('#page-one').hide();
+        $('#page-omos').hide();
+        $('#page-slotsnews').hide();
+        $('#page-slotsnews').hide();
+        $('#page-kontakt').hide();
+        $('#page-bet').show();
+        //$('#page-login').hide();ø
+    });
+
+
+    $('#page-regler').hide();
+    $('#page-omos').hide();
+    $('#page-slotsnews').hide();
+    $('#page-kontakt').hide();
+    $('#page-bet').hide();
+</script>
+
+</html>
