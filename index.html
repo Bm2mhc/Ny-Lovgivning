@@ -48,22 +48,6 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-    <!----Firebase
-    --------------------------------------------------->
-    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyCBDhxn75PGSX1ZeksfUwxkYnGr77p37Gg",
-            authDomain: "slotshaven-bet.firebaseapp.com",
-            databaseURL: "https://slotshaven-bet.firebaseio.com",
-            projectId: "slotshaven-bet",
-            storageBucket: "slotshaven-bet.appspot.com",
-            messagingSenderId: "931978310597"
-        };
-        firebase.initializeApp(config);
-    </script>
-
 </head>
 
 <body>
@@ -75,173 +59,1098 @@
             <div class="nav-wrapper green">
 
                 <div class="container">
-                    <a href="#" class="brand-logo" size="7" style="font-family: 'Oswald';"
-                        id="home"><b>Ny Lovgivning</b></a>
-                    <a href="#" class="sidenav-trigger" data-target="slide_out"><i class="material-icons">menu</i></a>
+                    <a href="#" class="brand-logo" size="7" style="font-family: 'Oswald';" id="home"><b>Ny
+                            Lovgivning</b></a>
 
                     <ul class="hide-on-med-and-down right">
+                        <li><a class='dropdown-trigger btn' datatarget="flygtning" href="#flygtning"
+                                style="font-family: 'oswald'">Flygtning</a>
+                        </li>
+                        <ul id='flygtning' class='dropdown-content'>
+                            <li><a id="44" href="#!">§ 44 Indfødselret</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                        </ul>
 
-                        <li id="menu-page-bet" ><a href="#bet" style="font-family: 'oswald'">Specielle odds</a></li>
-                        <li id="menu-page-regler"><a href="#regler" style="font-family: 'oswald'">Regler</a></li>
-                        <li id="menu-page-omos"><a href="#om os" style="font-family: 'oswald'">Om os</a></li>
-                        <li id="menu-page-kontakt"><a href="#kontakt" style="font-family: 'oswald'">Kontakt</a></li>
+                        <li><a class='dropdown-trigger btn' datatarget="Finans" href="#Finans"
+                                style="font-family: 'oswald'">Finans</a></li>
+
+                        <ul id='Finans' class='dropdown-content'>
+                            <li><a id="43" href="#!"> § 43 Påsætning af skatter</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li><a id="45" href="#!">§ 45 Forslag til fianslov</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li><a id="46" href="#!">§ 46 Skatter før vedtagelse</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li><a id="47" href="#!">§ 47 Statsregnskabet</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                        </ul>
+
+                        <li><a class='dropdown-trigger btn' datatarget="Nyelove" href="#Nyelove"
+                                style="font-family: 'oswald'">Behandling af nye love</a></li>
+
+                        <ul id='Nyelove' class='dropdown-content'>
+                            <li><a id="41" href="#!"> § 41 Fremvisning af love</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                        </ul>
+
+                        <li><a class='dropdown-trigger btn' datatarget="folkeafstemning" href="#folkeafstemning"
+                                style="font-family: 'oswald'">Folkeafstemning</a></li>
+
+                        <ul id='folkeafstemning' class='dropdown-content'>
+                            <li><a id="42" href="#!">§ 42 Folkeafstemning</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                        </ul>
+
+                        <li><a class='dropdown-trigger btn' datatarget="folketinget" href="#folketinget"
+                                style="font-family: 'oswald'">Folketinget</a></li>
+
+                        <ul id='folketinget' class='dropdown-content'>
+                            <li class="divider" tabindex="-1"></li>
+                            <li><a id="48" href="#!">§ 48 forretningsordenen</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li><a id="49" href="#!">§ 49 Offenlighed</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li><a id="50" href="#!">§ 50 Beslutninger</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li><a id="51" href="#!">§ 51 kommissioner</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li><a id="52" href="#!">§ 52 Kommissioners medlemmer</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li><a id="53" href="#!">§ 53 Kræve forklaring</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li><a id="54" href="#!">§ 54 Lovforslag</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li><a id="55" href="#!">§ 55 Administrativ opsyn</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li><a id="56" href="#!">§ 56 Plads</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li><a id="57" href="#!">§ 57 Fængsel</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li><a id="58" href="#!">§ 58 Kompensation</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                        </ul>
+
+                        <li><a class='dropdown-trigger btn' datatarget="detnyefolketinget" href="#detnyefolketinget"
+                                style="font-family: 'oswald'">Det nye folketing</a></li>
+                        <ul id='detnyefolketinget' class='dropdown-content'>
+                            <li><a id="35" href="#!">§ 35 Det Nye Folketing</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li><a id=36 href="#!">§ 36 Folketingsåret</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li><a id="37" href="#!">§ 37 Lokation</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li><a id="38" href="#!">§ 38 Første møde</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li><a id="39" href="#!">§ 39 Dagsorden</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li><a id="40" href="#!">§ 40 Taletid</a></li>
+                        </ul>
+
+                        <li><a class='dropdown-trigger btn' href="#kontakt" style="font-family: 'oswald'">Kontakt</a>
+                        </li>
 
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <ul class="sidenav" id="slide_out">
-
-            <li id="menu-page-bet2"><a href="#bet">Specielle odds</a></li>
-            <li id="menu-page-regler2"><a href="#regler">Regler</a></li>
-            <li id="menu-page-omos2"><a href="#om os">Om os</a></li>
-            <li id="menu-page-kontakt2"><a href="#kontakt">Kontakt</a></li>
-
-        </ul>
-
 
         <!--------------------------------------------------------------------------------------------------------------->
         <div class="container" style="margin-top: 1%">
             <div id="page-one">
                 <div class="row">
-                    <div class="col s12 l5 offset-l1">
-                        <img
-                            src="https://arcticwolf.com/wp-content/uploads/2018/01/LEGAL-300x300.png">
+                    <div class="col s12 l4 offset-l1">
+
+                        <img src="https://arcticwolf.com/wp-content/uploads/2018/01/LEGAL-300x300.png">
+
                     </div>
-                    <div class="col s12 l6">
+                    <div class="col s12 l7">
 
                         <h4>Ny lovgivning</h4>
                         <h5>En forstålige grundlov</h5>
                         <p>Ny lovgining er en hel ny omskrivning af Grundloven.</p>
                         <p>Ny lovgivning tager Grundloven og indeler paragraferne i overksuelige sektioner</p>
                         <p>Ny lovgivning skal hjælpe dig forstå loven og er her så du altid kender</p>
+
+                        <pre>
+
+                        </pre>
+                        <pre>
+
+                            </pre>
+                        <pre>
+
+                                </pre>
+                        <pre>
+
+                                    </pre>
+                        <pre>
+
+                                        </pre>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="page-regler">
-            <div class="row">
-                <div class="col s12 l4 offset-l2">
-                    <img width="370" height="300"
-                        src="https://images.unsplash.com/photo-1526865512088-555ece30eb44?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=300&h=300&fit=crop&ixid=eyJhcHBfaWQiOjF9">
-                </div>
-                <div class="col s12 l6">
-                    <h4>Regler</h4>
-                    <li>Du better penge</li>
-                    <li>Du vinder øl</li>
-                    <p>Det er så nemt</p>
-                    <li>Du har 14 dages retur ret</li>
-                    <li>Hvis du trækker pengene ud tidligere får du kun penge for det den er faldet til</li>
-                </div>
-            </div>
-        </div>
-        </div>
 
-        <div id="page-omos">
-            <div class="row">
-                <div class="col s12 l4 offset-l2">
-                    <img width="370" height="300"
-                        src="https://slotshaven.dk/wp-content/uploads/2017/05/slotshaven-gymnasium-video.jpg"
-                        class="right">
-                </div>
-                <div class="col s12 l6">
-                    <h4>Om os</h4>"
-                    <h5>Skaberen</h5>
-                    <p>Jeg er en elev som vil bruge sine programmerings timer til noget</p>
-                    <p>Jeg kommer fra R klassen som er slagger klassen</p>
-                    <p>Vi gik fra 26-21 elever mellem 1-2g og det vil vi vinde penge på</p>
-                    <p>Derfor skabte jeg dette programmerings progjekt som jeg kunne bruge til eksamen</p>
+        <div class="container" style="margin-top: 1%">
+            <div id="page-35">
+                <div class="row">
+                    <div class="col s12 l0 offset-l0">
+                        <img src="https://source.unsplash.com/300x300/?35">
+                    </div>
+                    <div class="col s12 l12">
 
-                    <h5>Slots bet</h5>
-                    <p>Slots bet er et firma der gør så man kan vinde øl på din venner</p>
-                    <p>I tilmelder jeres klasse og i kan vinde øl på karaktere og udsmidning</p>
-                </div>
-            </div>
-        </div>
-        </div>
+                        <h4> § 35 Det nye folketing</h4>
+                        <p>Stk 1. Det nyvalgte folketing skal holde første møde kl. 12, den 12. hverdag efter dagen der
+                            har været valg, hvis monarkiet ikke har kaldt til et møde inden den 12. hverdag efter valget
+                        </p>
+                        <p>Stk 2. Lige efter dette skal folketinget vælge formand og næstformand</p>
 
-        <div id="page-slotsnews">
-            <div class="row">
-                <div class="col s12 l6 offset-l2">
+                        <div id="35ikke">
+                            <h5> § 35</h5>
+                            <p><i>Stk. 1. Nyvalgt folketing træder sammen kl. 12 den tolvte søgnedag efter valgdagen,
+                                    dersom kongen ikke har indkaldt det til møde forinden.</i></p>
+                            <p><i>Stk. 2. Straks efter prøvelsen af mandaterne sættes folketinget ved valg af formand og
+                                    næstformænd.</i></p>
+                            <pre></pre>
+                        </div>
+                        <a id="knap351" class="waves-effect waves-light btn">Ikke omskrevende</a>
+                    </div>
+                    <pre>
+                            
+                        </pre>
                     <script>
-                        function SlotsNEWS() {
-
-                            $.getJSON("Slotsnews.json", function (json) {
-                                console.log(json); // this will show the info it in firebug console
-                            });
-                        }
+                        $('#35ikke').hide();
+                        $('#knap351').click(function () {
+                            $('#35ikke').toggle("slide");
+                        });
                     </script>
-                    <div class="col s12 l4"> <img
-                            src="https://www.slotsnews.dk/wp-content/uploads/2019/01/slotsnews_V2_X2.png">
 
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 1%">
+            <div id="page-36">
+                <div class="row">
+                    <div class="col s12 l0 offset-l0">
+                        <img src="https://source.unsplash.com/300x300/?36">
                     </div>
-                </div>
+                    <div class="col s12 l12">
 
-                <div class="col s12 l4">
+                        <h4> § 36 Folketingsåret</h4>
+                        <p>Stk. 1. Folketingsåret begynder den første tirsdag i oktober og slutter det følgende år
+                            første tirsdag i oktober.
+                        </p>
+                        <p>Stk 2. På folketingsårets første dag kl. 12 mødes medlemmerne hvor folketingsåret starter
+                        </p>
 
-                    <label>Filter</label>
-                    <select class="browser-default">
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="1" onclick="late()">Latest</option>
-                        <option value="2" onclick="first()">First</option>
-                    </select>
-                </div>
+                        <div id="36ikke">
+                            <h5> § 36</h5>
+                            <p><i>Stk. 1. Folketingsåret begynder den første tirsdag i oktober og varer til samme
+                                    tirsdag det følgende år.</i></p>
+                            <p><i>Stk. 2. På folketingsårets første dag kl. 12 sammentræder medlemmerne til møde, hvor
+                                    folketinget sættes påny.</i></p>
+                            <pre></pre>
+                        </div>
+                        <a id="knap361" class="waves-effect waves-light btn">Ikke omskrevende</a>
+                    </div>
+                    <script>
+                        $('#36ikke').hide();
+                        $('#knap361').click(function () {
+                            $('#36ikke').toggle("slide");
+                        });
+                    </script>
 
-            </div>
 
-
-        </div>
-        </div>
-        </div>
-
-        <div id="page-kontakt">
-            <div class="row">
-                <div class="col s12 l4 offset-l2">
-                    <img width="300" height="300"
-                        src="https://img10.androidappsapk.co/300/b/4/5/com.sixplus.lectio.png">
-                </div>
-                <div class="col s12 l6">
-                    <h4>Kontakt</h4>
-                    <p>lectio : Marinus Hurni Christensen, 2r (SH)</p>
-                    <p>Lokale : 24</p>
-                    <p>20 gangen</p>
-
-                    <a href="#" class="black-text">Instagram : @marinus_h_christensen</a>
-                </div>
-            </div>
-        </div>
-
-        <div id="page-bet">
-            <div class="row">
-                <div class="col s12 l2 offset-l1">
-                </div>
-                <div class="col s12 l9">
-
-                    <h4>Specielle ods</h4>
-
-                    <h5>Årets</h5>
-                    <p>Vil Malene finde en anden rektor enden skole start 2019/2020? Ja, 0.00 : Nej, 100.00</p>
-
-                    <h5>Månedens</h5>
-                    <p>Vil 3gerenes show være ligså dårligt som det sidste år? Ja, 1.00 : Nej, 20.00 </p>
-
-                    <h5>Dagens</h5>
-                    <p>Vil kantinen severe nachos i dag? Ja, 1.00 : Nej, 10.00</p>
                 </div>
             </div>
         </div>
 
 
+
+        <div class="container" style="margin-top: 1%">
+            <div id="page-37">
+                <div class="row">
+                    <div class="col s12 l0 offset-l0">
+                        <img src="https://source.unsplash.com/300x300/?37">
+                    </div>
+                    <div class="col s12 l12">
+
+                        <h4> § 37 Lokation</h4>
+                        <p>Folketinget ligger samme sted som regeringen er. I særlige tilfælde samles folketinget sig
+                            andre steder i landet
+
+                            <div id="37ikke">
+                                <h5> § 37</h5>
+                                <p><i>Folketinget træder sammen på det sted, hvor regeringen har sit sæde. I
+                                        overordentlige tilfælde kan folketinget dog samles andetsteds i riget.</i></p>
+                                <pre></pre>
+                            </div>
+                            <a id="knap371" class="waves-effect waves-light btn">Ikke omskrevende</a>
+                    </div>
+
+                    <script>
+                        $('#37ikke').hide();
+                        $('#knap371').click(function () {
+                            $('#37ikke').toggle("slide");
+                        });
+                    </script>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 1%">
+            <div id="page-38">
+                <div class="row">
+                    <div class="col s12 l0 offset-l0">
+                        <img src="https://source.unsplash.com/300x300/?38">
+                    </div>
+                    <div class="col s12 l12">
+
+                        <h4> § 38 Første møde</h4>
+                        <p>Stk. 1. Første folketingsmøde i folketingsåret giver statsministeren en uddybning af Danmarks
+                            almindelige stillinger og hvem i regeringen der skal styre dem.
+                        </p>
+                        <p>Stk 2. Der kommer en almindelig forhandling sted på det statsministeren sagde
+                        </p>
+
+                        <div id="38ikke">
+                            <h5> § 38</h5>
+                            <p><i>Stk. 1. På det første møde i folketingsåret afgiver statsministeren en redegørelse for
+                                    rigets almindelige stilling og de af regeringen påtænkte foranstaltninger.</i></p>
+                            <p><i>Stk. 2. På grundlag af redegørelsen finder en almindelig forhandling sted.</i></p>
+                            <pre></pre>
+                        </div>
+                        <a id="knap381" class="waves-effect waves-light btn">Ikke omskrevende</a>
+                    </div>
+
+                    <script>
+                        $('#38ikke').hide();
+                        $('#knap381').click(function () {
+                            $('#38ikke').toggle("slide");
+                        });
+                    </script>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 1%">
+            <div id="page-39">
+                <div class="row">
+                    <div class="col s12 l0 offset-l0">
+                        <img src="https://source.unsplash.com/300x300/?39">
+                    </div>
+                    <div class="col s12 l12">
+
+                        <h4> § 39 Dagsorden</h4>
+                        <p>Folketingets formand kalder folketinget til et møde til at fremvise dagsorden. Det er
+                            formanden der skal indkalde til møde når mindst 2/5 af folketingets medlemmer eller
+                            statsministeren skriver at de har et forslag omkring dagsorden
+                        </p>
+
+                        <div id="39ikke">
+                            <h5> § 39</h5>
+                            <p><i>Folketingets formand indkalder folketinget til møde med angivelse af dagsorden. Det
+                                    påhviler formanden at indkalde til møde, når mindst to femtedele af folketingets
+                                    medlemmer eller statsministeren skriftligt fremsætter begæring herom med angivelse
+                                    af dagsorden.</i></p>
+                            <pre></pre>
+                        </div>
+                        <a id="knap391" class="waves-effect waves-light btn">Ikke omskrevende</a>
+                    </div>
+
+                    <script>
+                        $('#39ikke').hide();
+                        $('#knap391').click(function () {
+                            $('#39ikke').toggle("slide");
+                        });
+                    </script>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 1%">
+            <div id="page-40">
+                <div class="row">
+                    <div class="col s12 l0 offset-l0">
+                        <img src="https://source.unsplash.com/300x300/?40">
+                    </div>
+                    <div class="col s12 l12">
+
+                        <h4> § 40 Taletid</h4>
+                        <p>Ministrene der i har en stilling, har adgang til folketinget og har ret til at forlange ordet
+                            under forhandlinger, så tit de ville, så længe det er inden for dagsorden. Stemmeret har de
+                            kun når resten af folketinget er der.
+                        </p>
+
+                        <div id="40ikke">
+                            <h5> § 40</h5>
+                            <p><i>Ministrene har i embeds medfør adgang til folketinget og er berettigede til under
+                                    forhandlingerne at forlange ordet, så ofte de vil, idet de iøvrigt iagttager
+                                    forretningsordenen. Stemmeret udøver de kun, når de tillige er medlemmer af
+                                    folketinget.</i></p>
+                            <pre></pre>
+                        </div>
+                        <a id="knap401" class="waves-effect waves-light btn">Ikke omskrevende</a>
+                    </div>
+
+                    <script>
+                        $('#40ikke').hide();
+                        $('#knap401').click(function () {
+                            $('#40ikke').toggle("slide");
+                        });
+                    </script>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 1%">
+            <div id="page-41">
+                <div class="row">
+                    <div class="col s12 l0 offset-l0">
+                        <img src="https://source.unsplash.com/300x300/?41">
+                    </div>
+                    <div class="col s12 l12">
+
+                        <h4> § 41 Fremvisning af love</h4>
+                        <p>Stk. 1. Hvert medlem af folketinget er ret til at komme med forslag til love og andre
+                            beslutninger.
+                        </p>
+                        <p>Stk. 2. Et lovforslag kan først blive vedtaget efter behandling 3 gange af folketinget. 2
+                            gange med forhandlinger og planlægning og sidste med afstemning
+                        </p>
+                        <p>Stk. 3. 2/5 af folketingets medlemmer kan sige til formanden at den 3. behandling af et
+                            lovforslag skal finde sted 12. hverdage efter forslaget var vedtaget ved 2. behandling.
+                            Rykningen af 3. behandling skal komme skriftligt med underskrift fra alle medlemmer der
+                            ønsker rykning. Lovforslaget kan ikke rykkes hvis loven angår en af disse love:
+
+                            <li>Finansloven</li>
+                            <li>Tillægsbevillingslove</li>
+                            <li>Midlertidige bevillingslove</li>
+                            <li>Statslånslove</li>
+                            <li>Love om at give indfødsret</li>
+                            <li>Love om tvangsflytning pga. statslig bebyggelse</li>
+                            <li>Love om indirekte skatte</li>
+                            <li>Hastende love som ikke kan vente pga. lovens formål</li>
+
+
+                        </p>
+                        <p>Stk. 4. Ved et nyt folketingsår bliver alle love og andre beslutninger der ikke er vedtaget
+                            stoppet og skal starte forfra med behandling
+                        </p>
+
+
+                        <div id="41ikke">
+                            <h5> § 41</h5>
+                            <p><i>Stk. 1. Ethvert medlem af folketinget er berettiget til at fremsætte forslag til love
+                                    og
+                                    andre beslutninger.</i></p>
+                            <p><i>Stk. 2. Et lovforslag kan ikke endeligt vedtages, forinden det tre gange har været
+                                    behandlet i folketinget.</i></p>
+                            <p><i>Stk. 3. To femtedele af folketingets medlemmer kan overfor formanden begære, at tredje
+                                    behandling tidligst finder sted tolv søgnedage efter forslagets vedtagelse ved anden
+                                    behandling. Begæringen skal være skriftlig og underskrevet af de deltagende
+                                    medlemmer. Udsættelse kan dog ikke finde sted, forsåvidt angår forslag til
+                                    finanslove, tillægsbevillingslove, midlertidige bevillingslove, statslånslove, love
+                                    om meddelelse af indfødsret, love om ekspropriation, love om indirekte skatter samt
+                                    i påtrængende tilfælde forslag til love, hvis ikrafttræden ikke kan udsættes af
+                                    hensyn til lovens formål.</i></p>
+                            <p><i>Stk. 4. Ved nyvalg og ved folketingsårets udgang bortfalder alle forslag til love og
+                                    andre beslutninger, der ikke forinden er endeligt vedtaget.</i></p>
+                            <pre></pre>
+                        </div>
+                        <a id="knap411" class="waves-effect waves-light btn">Ikke omskrevende</a>
+                        <pre>
+
+
+                    <script>
+                        $('#41ikke').hide();
+                        $('#knap411').click(function () {
+                            $('#41ikke').toggle("slide");
+                        });
+                    </script>
+
+
+                </div>
+            </div>
+        </div>
+ 
+        <div class="container" style="margin-top: 1%">
+                <div id="page-42">
+                        <div class="row">
+                                <div class="col s12 l0 offset-l0">
+                                    <img src="https://source.unsplash.com/300x300/?42">
+                                </div>
+                                <div class="col s12 l12">
+    
+                            <h4>§ 42 Folkeafstemning</h4>
+                            <p>Stk. 1. Når et loveforsalg er vedtaget af folketinget kan 1/3 af folketingets medlemmer indenfor 3 hverdage fra forslagets vedtagelse ønske folkeafstemning om lovforslaget. Ønsket skal komme med underskrifter fra alle medlemmer der deltagere
+                            </p>
+                            <p>Stk. 2. Et lovforslag som kan komme til folkeafstemning (se stk 6) og at stk 7 hellere ikke finder sted inden for de 3 hverdage eller inden folkeafstemningen har fundet sted
+                            </p>
+                            <p>Stk. 3. Når der er ønskes folkeafstemning om et lovforslag kan folketinget indenfor en frist af 5 hverdage fra den endelige vedtagelse af forslaget sige at lovforslaget ikke skal vedtages alligevel 
+                            </p>
+                            <p>Stk. 4. Hvis folketinget ikke laver stk 3 skal statsministeren meddele lovforslaget og at en folkeafstemning vil finde sted. Folkeafstemningen skal gå i gang efter statsministerens valg tidligst 12 hverdage eller 18 hverdage efter meddelelsen om folkeafstemning. 
+                            </p>
+<p>Stk. 5. Ved folkeafstemningen bliver der stemt for eller imod. For at lovforslaget bliver bekræftet skal over 50 % af stemmerne gå for, medmindre at der kun er 30 % af dem der må stemme der har stemt</p>
+<p>Stk. 6. Hvis loven handler om:	
+        <li>Finanslove</li>
+        <li>Tillægsbevillingslove</li>
+        <li>Midlertidige bevillingslove</li>
+        <li>Statslånslove</li>
+        <li> Normeringslove</li>
+        <li> Lønnings- og pensionslove</li>
+        <li> Love om meddelelse af indfødsret</li>
+        <li> Love om ekspropriation</li>
+        <li>Love om direkte og indirekte skatter</li>
+        <li>Love til gennemførelse af bestående traktatmæssige forpligtelser</li>
+        
+</p>
+<p>
+                        Disse love kan ikke komme til folkeafstemning. Andre ting der ikke kan komme til
+                        folkeafstemning, er forslag til i pargraferne §§ 8, 9, 10 og 11 omhandlede lov eller
+                        beslutninger i §19 som omhandler kongens befalinger som har noget med love at gør, medmindre det
+                        er en særlig lov som der bliver bestemt at folkeafstemning skal til. Hvis det er en grundlovs
+                        ændring gælder §88.
+                        </p>
+                        <p>Stk. 7. I særlige og meget påtrængende tilfælde kan et lovforslag som skal til folkeafstemning
+                            underskrives af kongen med det samme når forslaget er vedtaget af befolkningen. Bliver
+                            lovforslaget ikke stemt ind ved folkeafstemning skal statsministen meddele at loven ikke er
+                            blevet til noget. Dette skal ske senest 14 dage efter folkeafstemningen. Det er også først
+                            når han har meddelt at loven ikke blev til noget at den formelt er væk. </p>
+                        <p>Stk. 8. Folkeafstemning på Færørene og Grønland skal have nogle regler om den specifikke
+                            folkeafstemning.</p>
+
+                        <div id="42ikke">
+                            <h5> § 42</h5>
+                            <p><i>Stk. 1. Når et lovforslag er vedtaget af folketinget, kan en trediedel af folketingets
+                                    medlemmer indenfor en frist af tre søgnedage fra forslagets endelige vedtagelse
+                                    overfor formanden begære folkeafstemning om lovforslaget. Begæringen skal være
+                                    skriftlig og underskrevet af de deltagende medlemmer.</i></p>
+                            <p><i>Stk. 2. Et lovforslag, som kan undergives folkeafstemning, jfr. stk. 6, kan kun i det
+                                    i stk. 7 omhandlede tilfælde stadfæstes af kongen inden udløbet af den i stk. 1
+                                    nævnte frist, eller inden begæret folkeafstemning har fundet sted.</i></p>
+                            <p><i>Stk. 3. Når der er begæret folkeafstemning om et lovforslag, kan folketinget indenfor
+                                    en frist af fem søgnedage fra forslagets endelige vedtagelse beslutte, at forslaget
+                                    skal bortfalde.</i></p>
+                            <p><i>Stk. 4. Træffer folketinget ikke beslutning i henhold til stk. 3, skal meddelelse om,
+                                    at lovforslaget skal prøves ved folkeafstemning, snarest tilstilles statsministeren,
+                                    der derefter lader lovforslaget bekendtgøre med meddelelse om, at folkeafstemning
+                                    vil finde sted. Folkeafstemningen iværksættes efter statsministerens nærmere
+                                    bestemmelse tidligst tolv og senest atten søgnedage efter bekendtgørelsen.</i></p>
+                            <p><i>Stk. 5. Ved folkeafstemningen stemmes for og mod lovforslaget. Til lovforslagets
+                                    bortfald kræves, at et flertal af de i afstemningen deltagende folketingsvælgere,
+                                    dog mindst 30 procent af samtlige stemmeberettigede, har stemt mod lovforslaget.</i>
+                            </p>
+                            <p><i>Stk. 6. Forslag til finanslove, tillægsbevillingslove, midlertidige bevillingslove,
+                                    statslånslove, normeringslove, lønnings- og pensionslove, love om meddelelse af
+                                    indfødsret, love om ekspropriation, love om direkte og indirekte skatter samt love
+                                    til gennemførelse af bestående traktatmæssige forpligtelser kan ikke undergives
+                                    folkeafstemning. Det samme gælder forslag til de i §§ 8, 9, 10 og 11 omhandlede love
+                                    såvel som de i § 19 nævnte beslutninger, der måtte være i lovs form, medmindre det
+                                    for disse sidste ved særlig lov bestemmes, at sådan afstemning skal finde sted. For
+                                    grundlovsændringer gælder reglerne i § 88.</i></p>
+                            <p><i>Stk. 7. I særdeles påtrængende tilfælde kan et lovforslag, som kan undergives
+                                    folkeafstemning, stadfæstes af kongen straks efter dets vedtagelse, når forslaget
+                                    indeholder bestemmelse herom. Såfremt en tredjedel af folketingets medlemmer efter
+                                    de i stk. 1 omhandlede regler begærer folkeafstemning om lovforslaget eller den
+                                    stadfæstede lov, afholdes sådan folkeafstemning efter foranstående regler. Forkastes
+                                    loven ved folkeafstemningen, kundgøres dette af statsministeren uden unødigt ophold
+                                    og senest fjorten dage efter folkeafstemningens afholdelse. Fra kundgørelsesdagen er
+                                    loven bortfaldet.</i></p>
+                            <p><i>Stk. 8. Nærmere regler om folkeafstemning, herunder i hvilket omfang folkeafstemning
+                                    skal finde sted på Færøerne og i Grønland, fastsættes ved lov.</i></p>
+                        </div>
+                        <a id="knap421" class="waves-effect waves-light btn">Ikke omskrevende</a>
+                    </div>
+
+                    <script>
+                        $('#42ikke').hide();
+                        $('#knap421').click(function () {
+                            $('#42ikke').toggle("slide");
+                        });
+                    </script>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 1%">
+                <div id="page-43">
+                    <div class="row">
+                            <div class="col s12 l0 offset-l0">
+                                    <img src="https://source.unsplash.com/300x300/?43">
+                                </div>
+                                <div class="col s12 l12">
+    
+                            <h4>§ 43 Påsætning af skatter</h4>
+                            <p>Alt omkring skatter, statslån og afgifter kan ikke ændres uden lov</p>
+    
+                                <div id="43ikke">
+                                    <h5> § 43</h5>
+                                    <p><i>Ingen skat kan pålægges, forandres eller ophæves uden ved lov; ejheller kan noget mandskab udskrives eller noget statslån optages uden ifølge lov.</i></p>
+                                    <pre></pre>
+                    </div>
+                    <a id="knap431" class="waves-effect waves-light btn">Ikke omskrevende</a>
+                </div>
+
+                <script>
+                    $('#43ikke').hide();
+                    $('#knap431').click(function () {
+                        $('#43ikke').toggle("slide");
+                    });
+                </script>
+
+
+            </div>
+        </div>
+        </div>
+
+        <div class="container" style="margin-top: 1%">
+            <div id="page-44">
+                <div class="row">
+                    <div class="col s12 l0 offset-l0">
+                        <img src="https://source.unsplash.com/300x300/?44">
+                    </div>
+                    <div class="col s12 l12">
+
+                        <h4>§ 44 Statsborgerskab</h4>
+                        <p>Stk. 1. Ingen udlænding kan få dansk statsborgerskab uden lov</p>
+                        <p>Stk. 2. Om de har tilladelse til at eje en fast ejendom skal bestemmes af en lov</p>
+
+                        <div id="44ikke">
+                            <h5> § 44</h5>
+                            <p><i>Stk. 1. Ingen udlænding kan få indfødsret uden ved lov.</i></p>
+                            <p><i>Stk. 2. Om udlændinges adgang til at blive ejere af fast ejendom fastsættes regler ved
+                                    lov.</i></p>
+                            <pre></pre>
+                        </div>
+                        <a id="knap441" class="waves-effect waves-light btn">Ikke omskrevende</a>
+                    </div>
+
+                    <script>
+                        $('#44ikke').hide();
+                        $('#knap441').click(function () {
+                            $('#44ikke').toggle("slide");
+                        });
+                    </script>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 1%">
+            <div id="page-45">
+                <div class="row">
+                    <div class="col s12 l0 offset-l0">
+                        <img src="https://source.unsplash.com/300x300/?45">
+                    </div>
+                    <div class="col s12 l12">
+
+                        <h4>§ 45 Forslag til fianslov</h4>
+                        <p>Stk. 1. Forslag til finansloven til den næste finanslov skal komme frem for folketinget
+                            senest 4 måneder før finansåret starter.</p>
+                        <p>Stk. 2. Kan finanslovforslaget ikke være færdigbehandlet enden det næste finansår starter
+                            skal et forslag om en midlertidig bevillingslov fremvises for folketinget.</p>
+
+                        <div id="45ikke">
+                            <h5> § 45</h5>
+                            <p><i>Stk. 1. Forslag til finanslov for det kommende finansår skal fremsættes for
+                                    folketinget senest fire måneder før finansårets begyndelse.</i></p>
+                            <p><i>Stk. 2. Kan behandlingen af finanslovforslaget for det kommende finansår ikke ventes
+                                    tilendebragt inden finansårets begyndelse, skal forslag til en midlertidig
+                                    bevillingslov fremsættes for folketinget.</i></p>
+                            <pre></pre>
+                        </div>
+                        <a id="knap451" class="waves-effect waves-light btn">Ikke omskrevende</a>
+                    </div>
+
+                    <script>
+                        $('#45ikke').hide();
+                        $('#knap451').click(function () {
+                            $('#45ikke').toggle("slide");
+                        });
+                    </script>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 1%">
+            <div id="page-46">
+                <div class="row">
+                    <div class="col s12 l0 offset-l0">
+                        <img src="https://source.unsplash.com/300x300/?46">
+                    </div>
+                    <div class="col s12 l12">
+
+                        <h4>§ 46 Skatter før vedtagelse</h4>
+                        <p>Stk. 1. Inden finansloven eller en midlertidig bevillingslov er vedtaget, må folketinget ikke
+                            opkræve skatter.</p>
+                        <p>Stk. 2. Ingen udgift må pålægges eller fratages uden bekræftelse fra folketingets nye
+                            vedtaget finanslov eller i en af folketingets vedtaget tillægsbevillingslove eller
+                            midlertidige bevillingslove.</p>
+
+                        <div id="46ikke">
+                            <h5> § 46</h5>
+                            <p><i>Stk. 1.Forinden finansloven eller en midlertidig bevillingslov er vedtaget af
+                                    folketinget, må skatterne ikke opkræves.</i></p>
+                            <p><i>Stk. 2. Ingen udgift må afholdes uden hjemmel i den af folketinget vedtagne finanslov
+                                    eller i en af folketinget vedtaget tillægsbevillingslov eller midlertidig
+                                    bevillingslov.</i></p>
+                            <pre></pre>
+                        </div>
+                        <a id="knap461" class="waves-effect waves-light btn">Ikke omskrevende</a>
+                    </div>
+
+                    <script>
+                        $('#46ikke').hide();
+                        $('#knap461').click(function () {
+                            $('#46ikke').toggle("slide");
+                        });
+                    </script>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 1%">
+            <div id="page-47">
+                <div class="row">
+                    <div class="col s12 l0 offset-l0">
+                        <img src="https://source.unsplash.com/300x300/?47">
+                    </div>
+                    <div class="col s12 l12">
+
+                        <h4>§ 47 Statsregnskabet</h4>
+                        <p>Stk. 1. Folketinget skal se statsregnskabet senest 6 måneder efter finansåret er udløbet.</p>
+                        <p>Stk. 2. Folketinget vælger et antal revisorer. De skal gennemgå det årlige statsregnskab og
+                            ser efter om statens indtægter er opført så ingen udgifter er blevet taget uden at blive
+                            bekræftet af finansloven eller andre bevillingslove. De skal tjekke om alle oplysninger og
+                            dokumenter er fremvist og givet til dem. Nærmere regler om antal revisorer og hvilken
+                            virksomhed det kommer fra bliver bestemt ved lov</p>
+                        <p>Stk. 3. Statsregnskabet og revisorerne fremviser deres bemærkninger for folketinget til deres
+                            beslutning om der er noget galt</p>
+
+                        <div id="47ikke">
+                            <h5> § 47</h5>
+                            <p><i>Stk. 1. Statsregnskabet skal fremlægges for folketinget senest seks måneder efter
+                                    finansårets udløb.</i></p>
+                            <p><i>Stk. 2. Folketinget vælger et antal revisorer. Disse gennemgår det årlige
+                                    statsregnskab og påser, at samtlige statens indtægter er opført deri, og at ingen
+                                    udgift er afholdt uden hjemmel i finansloven eller anden bevillingslov. De kan
+                                    fordre sig alle fornødne oplysninger og aktstykker meddelt. De nærmere regler for
+                                    revisorernes antal og virksomhed fastsættes ved lov.</i></p>
+                            <p><i>Stk. 3. Statsregnskabet med revisorernes bemærkninger forelægges folketinget til
+                                    beslutning.</i></p>
+                            <pre></pre>
+                        </div>
+                        <a id="knap471" class="waves-effect waves-light btn">Ikke omskrevende</a>
+                    </div>
+
+                    <script>
+                        $('#47ikke').hide();
+                        $('#knap471').click(function () {
+                            $('#47ikke').toggle("slide");
+                        });
+                    </script>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 1%">
+            <div id="page-48">
+                <div class="row">
+                    <div class="col s12 l0 offset-l0">
+                        <img src="https://source.unsplash.com/300x300/?48">
+                    </div>
+                    <div class="col s12 l12">
+
+                        <h4>§ 48 forretningsordenen</h4>
+                        <p>Folketinget bestemmer selv deres forretningsorden som indeholder nærmere beslutninger
+                            vedrørende forretningsgang og opretholdelse</p>
+
+                        <div id="48ikke">
+                            <h5> § 48</h5>
+                            <p><i>Folketinget fastsætter selv sin forretningsorden, der indeholder de nærmere
+                                    bestemmelser vedrørende forretningsgang og ordens opretholdelse.</i></p>
+                            <pre></pre>
+                        </div>
+                        <a id="knap481" class="waves-effect waves-light btn">Ikke omskrevende</a>
+                    </div>
+
+                    <script>
+                        $('#48ikke').hide();
+                        $('#knap481').click(function () {
+                            $('#48ikke').toggle("slide");
+                        });
+                    </script>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 1%">
+            <div id="page-49">
+                <div class="row">
+                    <div class="col s12 l0 offset-l0">
+                        <img src="https://source.unsplash.com/300x300/?49">
+                    </div>
+                    <div class="col s12 l12">
+
+                        <h4>§ 49 Offenlighed</h4>
+                        <p>Folketinget holder alle møder offentlige. Formanden, det antal medlemmer der er bestemt i
+                            forretningsordenen eller ministeren kan dog forlange at en fremmede kan fjernes uden
+                            forhandling om det så er et offentligt eller lukket møde</p>
+
+                        <div id="49ikke">
+                            <h5>§ 49</h5>
+                            <p><i>Folketingets møder er offentlige. Formanden eller det i forretningsordenen bestemte
+                                    antal medlemmer eller en minister kan dog forlange, at alle uvedkommende fjernes,
+                                    hvorpå det uden forhandling afgøres, om sagen skal forhandles i et offentligt eller
+                                    lukket møde.</i></p>
+                            <pre></pre>
+                        </div>
+                        <a id="knap491" class="waves-effect waves-light btn">Ikke omskrevende</a>
+                    </div>
+
+                    <script>
+                        $('#49ikke').hide();
+                        $('#knap491').click(function () {
+                            $('#49ikke').toggle("slide");
+                        });
+                    </script>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 1%">
+            <div id="page-50">
+                <div class="row">
+                    <div class="col s12 l0 offset-l0">
+                        <img src="https://source.unsplash.com/300x300/?50">
+                    </div>
+                    <div class="col s12 l12">
+
+                        <h4>§ 50 Beslutninger</h4>
+                        <p>Folketinget kan kunne lave beslutninger hvis over halvdelen af medlemmerne er tilstede og
+                            deltager i afstemningen</p>
+
+                        <div id="50ikke">
+                            <h5>§ 50</h5>
+                            <p><i>Folketinget kan kun tage beslutning, når over halvdelen af medlemmerne er tilstede og
+                                    deltager i afstemningen.</i></p>
+                            <pre></pre>
+                        </div>
+                        <a id="knap501" class="waves-effect waves-light btn">Ikke omskrevende</a>
+                    </div>
+
+                    <script>
+                        $('#50ikke').hide();
+                        $('#knap501').click(function () {
+                            $('#50ikke').toggle("slide");
+                        });
+                    </script>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 1%">
+            <div id="page-51">
+                <div class="row">
+                    <div class="col s12 l0 offset-l0">
+                        <img src="https://source.unsplash.com/300x300/?51">
+                    </div>
+                    <div class="col s12 l12">
+
+                        <h4>§ 51 Kommissioner</h4>
+                        <p>Folketinget kan nedsætte kommissioner af sine medlemmer til at undersøge almenvigtige sager.
+                            Kommissionerne er berettigede til at fordre skriftlige eller mundtlige oplysninger såvel af
+                            private borgere som af offentlige myndigheder.</p>
+
+                        <div id="51ikke">
+                            <h5>§ 51</h5>
+                            <p><i>Folketinget kan sætte kommissioner på sine medlemmer til at undersøge normale vigtige
+                                    sager. Kommissionerne skal tjekke alle skriftlige og mundtlige oplysninger fra
+                                    private borgere til offentlige myndigheder</i></p>
+                            <pre></pre>
+                        </div>
+                        <a id="knap511" class="waves-effect waves-light btn">Ikke omskrevende</a>
+                    </div>
+
+                    <script>
+                        $('#51ikke').hide();
+                        $('#knap511').click(function () {
+                            $('#51ikke').toggle("slide");
+                        });
+                    </script>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 1%">
+            <div id="page-52">
+                <div class="row">
+                    <div class="col s12 l0 offset-l0">
+                        <img src="https://source.unsplash.com/300x300/?52">
+                    </div>
+                    <div class="col s12 l12">
+
+                        <h4>§ 52 Kommissioners medlemmer</h4>
+                        <p>Folketinget vælger medlemmer til kommissioner som sker efter forholdstal</p>
+
+                        <div id="52ikke">
+                            <h5>§ 52</h5>
+                            <p><i>Folketingets valg af medlemmer til kommissioner og hverv sker efter forholdstal.</i>
+                            </p>
+                            <pre></pre>
+                        </div>
+                        <a id="knap521" class="waves-effect waves-light btn">Ikke omskrevende</a>
+                    </div>
+
+                    <script>
+                        $('#52ikke').hide();
+                        $('#knap521').click(function () {
+                            $('#52ikke').toggle("slide");
+                        });
+                    </script>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 1%">
+            <div id="page-53">
+                <div class="row">
+                    <div class="col s12 l0 offset-l0">
+                        <img src="https://source.unsplash.com/300x300/?53">
+                    </div>
+                    <div class="col s12 l12">
+
+                        <h4>§ 53 Kræve forklaring</h4>
+                        <p>Ethvert medlem af folketinget kan bringe offentlige anliggende til forhandling og kræve
+                            ministerens forklaring.</p>
+
+                        <div id="53ikke">
+                            <h5>§ 53</h5>
+                            <p><i>Ethvert medlem af folketinget kan med dettes samtykke bringe ethvert offentligt
+                                    anliggende under forhandling og derom æske ministrenes forklaring.</i></p>
+                            <pre></pre>
+                        </div>
+                        <a id="knap531" class="waves-effect waves-light btn">Ikke omskrevende</a>
+                    </div>
+
+                    <script>
+                        $('#53ikke').hide();
+                        $('#knap531').click(function () {
+                            $('#53ikke').toggle("slide");
+                        });
+                    </script>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 1%">
+            <div id="page-54">
+                <div class="row">
+                    <div class="col s12 l0 offset-l0">
+                        <img src="https://source.unsplash.com/300x300/?54">
+                    </div>
+                    <div class="col s12 l12">
+
+                        <h4>§ 54 Lovforslag</h4>
+                        <p>Anmodninger og lovforslag kan kun komme i folketinget ved hjælp af en af deres medlemmer</p>
+
+                        <div id="54ikke">
+                            <h5>§ 54</h5>
+                            <p><i>Andragender kan kun overgives til folketinget ved et af dettes medlemmer.</i></p>
+                            <pre></pre>
+                        </div>
+                        <a id="knap541" class="waves-effect waves-light btn">Ikke omskrevende</a>
+                    </div>
+
+                    <script>
+                        $('#54ikke').hide();
+                        $('#knap541').click(function () {
+                            $('#54ikke').toggle("slide");
+                        });
+                    </script>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 1%">
+            <div id="page-55">
+                <div class="row">
+                    <div class="col s12 l0 offset-l0">
+                        <img src="https://source.unsplash.com/300x300/?55">
+                    </div>
+                    <div class="col s12 l12">
+
+                        <h4>§ 55 Administrativ opsyn</h4>
+                        <p>Ved en lovbestemmelse skal folketinget vælge 1 eller 2 medlemmer der ikke er med i
+                            folketinget til at have opsyn med statens civile og militære administrativ</p>
+
+                        <div id="55ikke">
+                            <h5>§ 55</h5>
+                            <p><i>Ved lov bestemmes, at folketinget vælger en eller to personer, der ikke er medlemmer
+                                    af folketinget, til at have indseende med statens civile og militære
+                                    forvaltning.</i></p>
+                            <pre></pre>
+                        </div>
+                        <a id="knap551" class="waves-effect waves-light btn">Ikke omskrevende</a>
+                    </div>
+
+                    <script>
+                        $('#55ikke').hide();
+                        $('#knap551').click(function () {
+                            $('#55ikke').toggle("slide");
+                        });
+                    </script>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 1%">
+            <div id="page-56">
+                <div class="row">
+                    <div class="col s12 l0 offset-l0">
+                        <img src="https://source.unsplash.com/300x300/?56">
+                    </div>
+                    <div class="col s12 l12">
+
+                        <h4>§ 56 Plads</h4>
+                        <p>Folketingsmedlemmerne er med i folketinget fra deres parti og ikke deres vælgere</p>
+
+                        <div id="56ikke">
+                            <h5>§ 56</h5>
+                            <p><i>Folketingsmedlemmerne er ene bundet ved deres overbevisning og ikke ved nogen
+                                    forskrift af deres vælgere.</i></p>
+                            <pre></pre>
+                        </div>
+                        <a id="knap561" class="waves-effect waves-light btn">Ikke omskrevende</a>
+                    </div>
+
+                    <script>
+                        $('#56ikke').hide();
+                        $('#knap561').click(function () {
+                            $('#56ikke').toggle("slide");
+                        });
+                    </script>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 1%">
+            <div id="page-57">
+                <div class="row">
+                    <div class="col s12 l0 offset-l0">
+                        <img src="https://source.unsplash.com/300x300/?57">
+                    </div>
+                    <div class="col s12 l12">
+
+                        <h4>§ 57 Fængsel</h4>
+                        <p>Ingen medlemmer af folketinget kan uden samtykke tiltales eller smides i fængsel af nogen
+                            art, medmindre personen er grebet på fersk gering. For sine ytringer i folketinget kan ingen
+                            medlemmer få ballade for det de har sagt uden folketingets samtykke.</p>
+
+                        <div id="57ikke">
+                            <h5>§ 57</h5>
+                            <p><i>Intet medlem af folketinget kan uden dettes samtykke tiltales eller underkastes
+                                    fængsling af nogen art, medmindre han er grebet på fersk gerning. For sine ytringer
+                                    i folketinget kan intet af dets medlemmer uden folketingets samtykke drages til
+                                    ansvar udenfor samme.</i></p>
+                            <pre></pre>
+                        </div>
+                        <a id="knap571" class="waves-effect waves-light btn">Ikke omskrevende</a>
+                    </div>
+
+                    <script>
+                        $('#57ikke').hide();
+                        $('#knap571').click(function () {
+                            $('#57ikke').toggle("slide");
+                        });
+                    </script>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 1%">
+            <div id="page-58">
+                <div class="row">
+                    <div class="col s12 l0 offset-l0">
+                        <img src="https://source.unsplash.com/300x300/?58">
+                    </div>
+                    <div class="col s12 l12">
+
+                        <h4>§ 58 Kompensation</h4>
+                        <p>Folketingets medlemmer får kompensation, hvis størrelse fastsættes ved valgloven.</p>
+
+                        <div id="58ikke">
+                            <h5>§ 58</h5>
+                            <p><i>Folketingets medlemmer oppebærer et vederlag, hvis størrelse fastsættes ved
+                                    valgloven.</i></p>
+                            <pre></pre>
+                        </div>
+                        <a id="knap581" class="waves-effect waves-light btn">Ikke omskrevende</a>
+                    </div>
+
+                    <script>
+                        $('#58ikke').hide();
+                        $('#knap581').click(function () {
+                            $('#58ikke').toggle("slide");
+                        });
+                    </script>
+
+
+                </div>
+            </div>
         </div>
     </main>
 
+
+    <!----------------------------------------------------------------------------------------------------------->
     <footer class="page-footer black">
         <div class="container">
             <div class="row">
                 <div class="col s12 l6">
                     <h5>Kontakt</h5>
-                    <a  href="https://www.instagram.com/marinus_h_christensen/" class="white-text">Marinus Hurni Christensen, 2r (SH)</a>
+                    <a href="https://www.instagram.com/marinus_h_christensen/" class="white-text">Marinus Hurni
+                        Christensen, 2r (SH)</a>
                     <p>Lokale : 24</p>
                     <p>20 gang</p>
                 </div>
@@ -279,129 +1188,795 @@
 
     });*/
 
-    $('#menu-page-regler').click(function () {
-        $('#page-regler').show();
-        $('#page-one').hide();
-        $('#page-omos').hide();
-        $('#page-slotsnews').hide();
-        $('#page-kontakt').hide();
-        $('#page-bet').hide();
-        //$('#page-login').hide();ø
-    });
-
     $('#home').click(function () {
-        $('#page-regler').hide();
         $('#page-one').show();
-        $('#page-omos').hide();
-        $('#page-slotsnews').hide();
-        $('#page-kontakt').hide();
-        $('#page-bet').hide();
-        //$('#page-login').hide();ø
+        $('#page-35').hide();
+        $('#page-36').hide();
+        $('#page-37').hide();
+        $('#page-38').hide();
+        $('#page-39').hide();
+        $('#page-40').hide();
+        $('#page-41').hide();
+        $('#page-42').hide();
+        $('#page-43').hide();
+        $('#page-44').hide();
+        $('#page-45').hide();
+        $('#page-46').hide();
+        $('#page-47').hide();
+        $('#page-48').hide();
+        $('#page-49').hide();
+        $('#page-50').hide();
+        $('#page-51').hide();
+        $('#page-52').hide();
+        $('#page-53').hide();
+        $('#page-54').hide();
+        $('#page-55').hide();
+        $('#page-56').hide();
+        $('#page-57').hide();
+        $('#page-58').hide();
+        $('#kontakt').hide();
+
+
     });
 
-    $('#menu-page-omos').click(function () {
-        $('#page-regler').hide();
+    $('#35').click(function () {
         $('#page-one').hide();
-        $('#page-omos').show();
-        $('#page-slotsnews').hide();
-        $('#page-kontakt').hide();
-        $('#page-bet').hide();
-        //$('#page-login').hide();ø
+        $('#page-35').show();
+        $('#page-36').hide();
+        $('#page-37').hide();
+        $('#page-38').hide();
+        $('#page-39').hide();
+        $('#page-40').hide();
+        $('#page-41').hide();
+        $('#page-42').hide();
+        $('#page-43').hide();
+        $('#page-44').hide();
+        $('#page-45').hide();
+        $('#page-46').hide();
+        $('#page-47').hide();
+        $('#page-48').hide();
+        $('#page-49').hide();
+        $('#page-50').hide();
+        $('#page-51').hide();
+        $('#page-52').hide();
+        $('#page-53').hide();
+        $('#page-54').hide();
+        $('#page-55').hide();
+        $('#page-56').hide();
+        $('#page-57').hide();
+        $('#page-58').hide();
+        $('#kontakt').hide();
     });
 
-    $('#menu-page-slotsnews').click(function () {
-        $('#page-login').hide();
-        $('#page-regler').hide();
+    $('#36').click(function () {
         $('#page-one').hide();
-        $('#page-omos').hide();
-        $('#page-slotsnews').hide();
-        $('#page-slotsnews').show();
-        $('#page-kontakt').hide();
-        $('#page-bet').hide();
-        //$('#page-login').hide();ø
+        $('#page-35').hide();
+        $('#page-36').show();
+        $('#page-37').hide();
+        $('#page-38').hide();
+        $('#page-39').hide();
+        $('#page-40').hide();
+        $('#page-41').hide();
+        $('#page-42').hide();
+        $('#page-43').hide();
+        $('#page-44').hide();
+        $('#page-45').hide();
+        $('#page-46').hide();
+        $('#page-47').hide();
+        $('#page-48').hide();
+        $('#page-49').hide();
+        $('#page-50').hide();
+        $('#page-51').hide();
+        $('#page-52').hide();
+        $('#page-53').hide();
+        $('#page-54').hide();
+        $('#page-55').hide();
+        $('#page-56').hide();
+        $('#page-57').hide();
+        $('#page-58').hide();
+        $('#kontakt').hide();
     });
 
-    $('#menu-page-regler2').click(function () {
-        $('#page-regler').show();
+    $('#37').click(function () {
         $('#page-one').hide();
-        $('#page-omos').hide();
-        $('#page-slotsnews').hide();
-        $('#page-kontakt').hide();
-        $('#page-bet').hide();
-        //$('#page-login').hide();ø
+        $('#page-35').hide();
+        $('#page-36').hide();
+        $('#page-37').show();
+        $('#page-38').hide();
+        $('#page-39').hide();
+        $('#page-40').hide();
+        $('#page-41').hide();
+        $('#page-42').hide();
+        $('#page-43').hide();
+        $('#page-44').hide();
+        $('#page-45').hide();
+        $('#page-46').hide();
+        $('#page-47').hide();
+        $('#page-48').hide();
+        $('#page-49').hide();
+        $('#page-50').hide();
+        $('#page-51').hide();
+        $('#page-52').hide();
+        $('#page-53').hide();
+        $('#page-54').hide();
+        $('#page-55').hide();
+        $('#page-56').hide();
+        $('#page-57').hide();
+        $('#page-58').hide();
+        $('#kontakt').hide();
     });
 
-    $('#menu-page-omos2').click(function () {
-        $('#page-regler').hide();
+    $('#38').click(function () {
         $('#page-one').hide();
-        $('#page-omos').show();
-        $('#page-slotsnews').hide();
-        $('#page-kontakt').hide();
-        $('#page-bet').hide();
-        //$('#page-login').hide();ø
+        $('#page-35').hide();
+        $('#page-36').hide();
+        $('#page-37').hide();
+        $('#page-38').show();
+        $('#page-39').hide();
+        $('#page-40').hide();
+        $('#page-41').hide();
+        $('#page-42').hide();
+        $('#page-43').hide();
+        $('#page-44').hide();
+        $('#page-45').hide();
+        $('#page-46').hide();
+        $('#page-47').hide();
+        $('#page-48').hide();
+        $('#page-49').hide();
+        $('#page-50').hide();
+        $('#page-51').hide();
+        $('#page-52').hide();
+        $('#page-53').hide();
+        $('#page-54').hide();
+        $('#page-55').hide();
+        $('#page-56').hide();
+        $('#page-57').hide();
+        $('#page-58').hide();
+        $('#kontakt').hide();
     });
 
-    $('#menu-page-slotsnews2').click(function () {
-        $('#page-regler').hide();
+    $('#39').click(function () {
         $('#page-one').hide();
-        $('#page-omos').hide();
-        $('#page-slotsnews').hide();
-        $('#page-slotsnews').show();
-        $('#page-kontakt').hide();
-        $('#page-bet').hide();
-        //$('#page-login').hide();ø
+        $('#page-35').hide();
+        $('#page-36').hide();
+        $('#page-37').hide();
+        $('#page-38').hide();
+        $('#page-39').show();
+        $('#page-40').hide();
+        $('#page-41').hide();
+        $('#page-42').hide();
+        $('#page-43').hide();
+        $('#page-44').hide();
+        $('#page-45').hide();
+        $('#page-46').hide();
+        $('#page-47').hide();
+        $('#page-48').hide();
+        $('#page-49').hide();
+        $('#page-50').hide();
+        $('#page-51').hide();
+        $('#page-52').hide();
+        $('#page-53').hide();
+        $('#page-54').hide();
+        $('#page-55').hide();
+        $('#page-56').hide();
+        $('#page-57').hide();
+        $('#page-58').hide();
+        $('#kontakt').hide();
     });
 
-    $('#menu-page-kontakt').click(function () {
-        $('#page-regler').hide();
+    $('#40').click(function () {
         $('#page-one').hide();
-        $('#page-omos').hide();
-        $('#page-slotsnews').hide();
-        $('#page-slotsnews').hide();
-        $('#page-kontakt').show();
-        $('#page-bet').hide();
-        //$('#page-login').hide();ø
+        $('#page-35').hide();
+        $('#page-36').hide();
+        $('#page-37').hide();
+        $('#page-38').hide();
+        $('#page-39').hide();
+        $('#page-40').show();
+        $('#page-41').hide();
+        $('#page-42').hide();
+        $('#page-43').hide();
+        $('#page-44').hide();
+        $('#page-45').hide();
+        $('#page-46').hide();
+        $('#page-47').hide();
+        $('#page-48').hide();
+        $('#page-49').hide();
+        $('#page-50').hide();
+        $('#page-51').hide();
+        $('#page-52').hide();
+        $('#page-53').hide();
+        $('#page-54').hide();
+        $('#page-55').hide();
+        $('#page-56').hide();
+        $('#page-57').hide();
+        $('#page-58').hide();
+        $('#kontakt').hide();
     });
 
-    $('#menu-page-kontakt2').click(function () {
-        $('#page-regler').hide();
+    $('#41').click(function () {
         $('#page-one').hide();
-        $('#page-omos').hide();
-        $('#page-slotsnews').hide();
-        $('#page-slotsnews').hide();
-        $('#page-kontakt').show();
-        $('#page-bet').hide();
-        //$('#page-login').hide();ø
+        $('#page-35').hide();
+        $('#page-36').hide();
+        $('#page-37').hide();
+        $('#page-38').hide();
+        $('#page-39').hide();
+        $('#page-40').hide();
+        $('#page-41').show();
+        $('#page-42').hide();
+        $('#page-43').hide();
+        $('#page-44').hide();
+        $('#page-45').hide();
+        $('#page-46').hide();
+        $('#page-47').hide();
+        $('#page-48').hide();
+        $('#page-49').hide();
+        $('#page-50').hide();
+        $('#page-51').hide();
+        $('#page-52').hide();
+        $('#page-53').hide();
+        $('#page-54').hide();
+        $('#page-55').hide();
+        $('#page-56').hide();
+        $('#page-57').hide();
+        $('#page-58').hide();
+        $('#kontakt').hide();
     });
 
-    $('#menu-page-bet').click(function () {
-        $('#page-regler').hide();
+    $('#42').click(function () {
         $('#page-one').hide();
-        $('#page-omos').hide();
-        $('#page-slotsnews').hide();
-        $('#page-slotsnews').hide();
-        $('#page-kontakt').hide();
-        $('#page-bet').show();
-        //$('#page-login').hide();ø
+        $('#page-35').hide();
+        $('#page-36').hide();
+        $('#page-37').hide();
+        $('#page-38').hide();
+        $('#page-39').hide();
+        $('#page-40').hide();
+        $('#page-41').hide();
+        $('#page-42').show();
+        $('#page-43').hide();
+        $('#page-44').hide();
+        $('#page-45').hide();
+        $('#page-46').hide();
+        $('#page-47').hide();
+        $('#page-48').hide();
+        $('#page-49').hide();
+        $('#page-50').hide();
+        $('#page-51').hide();
+        $('#page-52').hide();
+        $('#page-53').hide();
+        $('#page-54').hide();
+        $('#page-55').hide();
+        $('#page-56').hide();
+        $('#page-57').hide();
+        $('#page-58').hide();
+        $('#kontakt').hide();
     });
 
-    $('#menu-page-2').click(function () {
-        $('#page-regler').hide();
+    $('#43').click(function () {
         $('#page-one').hide();
-        $('#page-omos').hide();
-        $('#page-slotsnews').hide();
-        $('#page-slotsnews').hide();
-        $('#page-kontakt').hide();
-        $('#page-bet').show();
-        //$('#page-login').hide();ø
+        $('#page-35').hide();
+        $('#page-36').hide();
+        $('#page-37').hide();
+        $('#page-38').hide();
+        $('#page-39').hide();
+        $('#page-40').hide();
+        $('#page-41').hide();
+        $('#page-42').hide();
+        $('#page-43').show();
+        $('#page-44').hide();
+        $('#page-45').hide();
+        $('#page-46').hide();
+        $('#page-47').hide();
+        $('#page-48').hide();
+        $('#page-49').hide();
+        $('#page-50').hide();
+        $('#page-51').hide();
+        $('#page-52').hide();
+        $('#page-53').hide();
+        $('#page-54').hide();
+        $('#page-55').hide();
+        $('#page-56').hide();
+        $('#page-57').hide();
+        $('#page-58').hide();
+        $('#kontakt').hide();
+    });
+
+    $('#44').click(function () {
+        $('#page-one').hide();
+        $('#page-35').hide();
+        $('#page-36').hide();
+        $('#page-37').hide();
+        $('#page-38').hide();
+        $('#page-39').hide();
+        $('#page-40').hide();
+        $('#page-41').hide();
+        $('#page-42').hide();
+        $('#page-43').hide();
+        $('#page-44').show();
+        $('#page-45').hide();
+        $('#page-46').hide();
+        $('#page-47').hide();
+        $('#page-48').hide();
+        $('#page-49').hide();
+        $('#page-50').hide();
+        $('#page-51').hide();
+        $('#page-52').hide();
+        $('#page-53').hide();
+        $('#page-54').hide();
+        $('#page-55').hide();
+        $('#page-56').hide();
+        $('#page-57').hide();
+        $('#page-58').hide();
+        $('#kontakt').hide();
+
+    });
+
+    $('#45').click(function () {
+        $('#page-one').hide();
+        $('#page-35').hide();
+        $('#page-36').hide();
+        $('#page-37').hide();
+        $('#page-38').hide();
+        $('#page-39').hide();
+        $('#page-40').hide();
+        $('#page-41').hide();
+        $('#page-42').hide();
+        $('#page-43').hide();
+        $('#page-44').hide();
+        $('#page-45').show();
+        $('#page-46').hide();
+        $('#page-47').hide();
+        $('#page-48').hide();
+        $('#page-49').hide();
+        $('#page-50').hide();
+        $('#page-51').hide();
+        $('#page-52').hide();
+        $('#page-53').hide();
+        $('#page-54').hide();
+        $('#page-55').hide();
+        $('#page-56').hide();
+        $('#page-57').hide();
+        $('#page-58').hide();
+        $('#kontakt').hide();
+    });
+
+    $('#46').click(function () {
+        $('#page-one').hide();
+        $('#page-35').hide();
+        $('#page-36').hide();
+        $('#page-37').hide();
+        $('#page-38').hide();
+        $('#page-39').hide();
+        $('#page-40').hide();
+        $('#page-41').hide();
+        $('#page-42').hide();
+        $('#page-43').hide();
+        $('#page-44').hide();
+        $('#page-45').hide();
+        $('#page-46').show();
+        $('#page-47').hide();
+        $('#page-48').hide();
+        $('#page-49').hide();
+        $('#page-50').hide();
+        $('#page-51').hide();
+        $('#page-52').hide();
+        $('#page-53').hide();
+        $('#page-54').hide();
+        $('#page-55').hide();
+        $('#page-56').hide();
+        $('#page-57').hide();
+        $('#page-58').hide();
+        $('#kontakt').hide();
     });
 
 
-    $('#page-regler').hide();
-    $('#page-omos').hide();
-    $('#page-slotsnews').hide();
-    $('#page-kontakt').hide();
-    $('#page-bet').hide();
+    $('#47').click(function () {
+        $('#page-one').hide();
+        $('#page-35').hide();
+        $('#page-36').hide();
+        $('#page-37').hide();
+        $('#page-38').hide();
+        $('#page-39').hide();
+        $('#page-40').hide();
+        $('#page-41').hide();
+        $('#page-42').hide();
+        $('#page-43').hide();
+        $('#page-44').hide();
+        $('#page-45').hide();
+        $('#page-46').hide();
+        $('#page-47').show();
+        $('#page-48').hide();
+        $('#page-49').hide();
+        $('#page-50').hide();
+        $('#page-51').hide();
+        $('#page-52').hide();
+        $('#page-53').hide();
+        $('#page-54').hide();
+        $('#page-55').hide();
+        $('#page-56').hide();
+        $('#page-57').hide();
+        $('#page-58').hide();
+        $('#kontakt').hide();
+    });
+
+    $('#48').click(function () {
+        $('#page-one').hide();
+        $('#page-35').hide();
+        $('#page-36').hide();
+        $('#page-37').hide();
+        $('#page-38').hide();
+        $('#page-39').hide();
+        $('#page-40').hide();
+        $('#page-41').hide();
+        $('#page-42').hide();
+        $('#page-43').hide();
+        $('#page-44').hide();
+        $('#page-45').hide();
+        $('#page-46').hide();
+        $('#page-47').hide();
+        $('#page-48').show();
+        $('#page-49').hide();
+        $('#page-50').hide();
+        $('#page-51').hide();
+        $('#page-52').hide();
+        $('#page-53').hide();
+        $('#page-54').hide();
+        $('#page-55').hide();
+        $('#page-56').hide();
+        $('#page-57').hide();
+        $('#page-58').hide();
+        $('#kontakt').hide();
+    });
+
+    $('#49').click(function () {
+        $('#page-one').hide();
+        $('#page-35').hide();
+        $('#page-36').hide();
+        $('#page-37').hide();
+        $('#page-38').hide();
+        $('#page-39').hide();
+        $('#page-40').hide();
+        $('#page-41').hide();
+        $('#page-42').hide();
+        $('#page-43').hide();
+        $('#page-44').hide();
+        $('#page-45').hide();
+        $('#page-46').hide();
+        $('#page-47').hide();
+        $('#page-48').hide();
+        $('#page-49').show();
+        $('#page-50').hide();
+        $('#page-51').hide();
+        $('#page-52').hide();
+        $('#page-53').hide();
+        $('#page-54').hide();
+        $('#page-55').hide();
+        $('#page-56').hide();
+        $('#page-57').hide();
+        $('#page-58').hide();
+        $('#kontakt').hide();
+    });
+
+    $('#50').click(function () {
+        $('#page-one').hide();
+        $('#page-35').hide();
+        $('#page-36').hide();
+        $('#page-37').hide();
+        $('#page-38').hide();
+        $('#page-39').hide();
+        $('#page-40').hide();
+        $('#page-41').hide();
+        $('#page-42').hide();
+        $('#page-43').hide();
+        $('#page-44').hide();
+        $('#page-45').hide();
+        $('#page-46').hide();
+        $('#page-47').hide();
+        $('#page-48').hide();
+        $('#page-49').hide();
+        $('#page-50').show();
+        $('#page-51').hide();
+        $('#page-52').hide();
+        $('#page-53').hide();
+        $('#page-54').hide();
+        $('#page-55').hide();
+        $('#page-56').hide();
+        $('#page-57').hide();
+        $('#page-58').hide();
+        $('#kontakt').hide();
+    });
+
+    $('#51').click(function () {
+        $('#page-one').hide();
+        $('#page-35').hide();
+        $('#page-36').hide();
+        $('#page-37').hide();
+        $('#page-38').hide();
+        $('#page-39').hide();
+        $('#page-40').hide();
+        $('#page-41').hide();
+        $('#page-42').hide();
+        $('#page-43').hide();
+        $('#page-44').hide();
+        $('#page-45').hide();
+        $('#page-46').hide();
+        $('#page-47').hide();
+        $('#page-48').hide();
+        $('#page-49').hide();
+        $('#page-50').hide();
+        $('#page-51').show();
+        $('#page-52').hide();
+        $('#page-53').hide();
+        $('#page-54').hide();
+        $('#page-55').hide();
+        $('#page-56').hide();
+        $('#page-57').hide();
+        $('#page-58').hide();
+        $('#kontakt').hide();
+    });
+
+    $('#52').click(function () {
+        $('#page-one').hide();
+        $('#page-35').hide();
+        $('#page-36').hide();
+        $('#page-37').hide();
+        $('#page-38').hide();
+        $('#page-39').hide();
+        $('#page-40').hide();
+        $('#page-41').hide();
+        $('#page-42').hide();
+        $('#page-43').hide();
+        $('#page-44').hide();
+        $('#page-45').hide();
+        $('#page-46').hide();
+        $('#page-47').hide();
+        $('#page-48').hide();
+        $('#page-49').hide();
+        $('#page-50').hide();
+        $('#page-51').hide();
+        $('#page-52').show();
+        $('#page-53').hide();
+        $('#page-54').hide();
+        $('#page-55').hide();
+        $('#page-56').hide();
+        $('#page-57').hide();
+        $('#page-58').hide();
+        $('#kontakt').hide();
+    });
+
+    $('#53').click(function () {
+        $('#page-one').hide();
+        $('#page-35').hide();
+        $('#page-36').hide();
+        $('#page-37').hide();
+        $('#page-38').hide();
+        $('#page-39').hide();
+        $('#page-40').hide();
+        $('#page-41').hide();
+        $('#page-42').hide();
+        $('#page-43').hide();
+        $('#page-44').hide();
+        $('#page-45').hide();
+        $('#page-46').hide();
+        $('#page-47').hide();
+        $('#page-48').hide();
+        $('#page-49').hide();
+        $('#page-50').hide();
+        $('#page-51').hide();
+        $('#page-52').hide();
+        $('#page-53').show();
+        $('#page-54').hide();
+        $('#page-55').hide();
+        $('#page-56').hide();
+        $('#page-57').hide();
+        $('#page-58').hide();
+        $('#kontakt').hide();
+    });
+
+    $('#54').click(function () {
+        $('#page-one').hide();
+        $('#page-35').hide();
+        $('#page-36').hide();
+        $('#page-37').hide();
+        $('#page-38').hide();
+        $('#page-39').hide();
+        $('#page-40').hide();
+        $('#page-41').hide();
+        $('#page-42').hide();
+        $('#page-43').hide();
+        $('#page-44').hide();
+        $('#page-45').hide();
+        $('#page-46').hide();
+        $('#page-47').hide();
+        $('#page-48').hide();
+        $('#page-49').hide();
+        $('#page-50').hide();
+        $('#page-51').hide();
+        $('#page-52').hide();
+        $('#page-53').hide();
+        $('#page-54').show();
+        $('#page-55').hide();
+        $('#page-56').hide();
+        $('#page-57').hide();
+        $('#page-58').hide();
+        $('#kontakt').hide();
+    });
+
+    $('#55').click(function () {
+        $('#page-one').hide();
+        $('#page-35').hide();
+        $('#page-36').hide();
+        $('#page-37').hide();
+        $('#page-38').hide();
+        $('#page-39').hide();
+        $('#page-40').hide();
+        $('#page-41').hide();
+        $('#page-42').hide();
+        $('#page-43').hide();
+        $('#page-44').hide();
+        $('#page-45').hide();
+        $('#page-46').hide();
+        $('#page-47').hide();
+        $('#page-48').hide();
+        $('#page-49').hide();
+        $('#page-50').hide();
+        $('#page-51').hide();
+        $('#page-52').hide();
+        $('#page-53').hide();
+        $('#page-54').hide();
+        $('#page-55').show();
+        $('#page-56').hide();
+        $('#page-57').hide();
+        $('#page-58').hide();
+        $('#kontakt').hide();
+    });
+
+    $('#56').click(function () {
+        $('#page-one').hide();
+        $('#page-35').hide();
+        $('#page-36').hide();
+        $('#page-37').hide();
+        $('#page-38').hide();
+        $('#page-39').hide();
+        $('#page-40').hide();
+        $('#page-41').hide();
+        $('#page-42').hide();
+        $('#page-43').hide();
+        $('#page-44').hide();
+        $('#page-45').hide();
+        $('#page-46').hide();
+        $('#page-47').hide();
+        $('#page-48').hide();
+        $('#page-49').hide();
+        $('#page-50').hide();
+        $('#page-51').hide();
+        $('#page-52').hide();
+        $('#page-53').hide();
+        $('#page-54').hide();
+        $('#page-55').hide();
+        $('#page-56').show();
+        $('#page-57').hide();
+        $('#page-58').hide();
+        $('#kontakt').hide();
+    });
+
+    $('#57').click(function () {
+        $('#page-one').hide();
+        $('#page-35').hide();
+        $('#page-36').hide();
+        $('#page-37').hide();
+        $('#page-38').hide();
+        $('#page-39').hide();
+        $('#page-40').hide();
+        $('#page-41').hide();
+        $('#page-42').hide();
+        $('#page-43').hide();
+        $('#page-44').hide();
+        $('#page-45').hide();
+        $('#page-46').hide();
+        $('#page-47').hide();
+        $('#page-48').hide();
+        $('#page-49').hide();
+        $('#page-50').hide();
+        $('#page-51').hide();
+        $('#page-52').hide();
+        $('#page-53').hide();
+        $('#page-54').hide();
+        $('#page-55').hide();
+        $('#page-56').hide();
+        $('#page-57').show();
+        $('#page-58').hide();
+        $('#kontakt').hide();
+    });
+
+    $('#58').click(function () {
+        $('#page-one').hide();
+        $('#page-35').hide();
+        $('#page-36').hide();
+        $('#page-37').hide();
+        $('#page-38').hide();
+        $('#page-39').hide();
+        $('#page-40').hide();
+        $('#page-41').hide();
+        $('#page-42').hide();
+        $('#page-43').hide();
+        $('#page-44').hide();
+        $('#page-45').hide();
+        $('#page-46').hide();
+        $('#page-47').hide();
+        $('#page-48').hide();
+        $('#page-49').hide();
+        $('#page-50').hide();
+        $('#page-51').hide();
+        $('#page-52').hide();
+        $('#page-53').hide();
+        $('#page-54').hide();
+        $('#page-55').hide();
+        $('#page-56').hide();
+        $('#page-57').hide();
+        $('#page-58').show();
+        $('#kontakt').hide();
+    });
+    $('#kontakt').click(function () {
+        $('#page-one').hide();
+        $('#page-35').hide();
+        $('#page-36').hide();
+        $('#page-37').hide();
+        $('#page-38').hide();
+        $('#page-39').hide();
+        $('#page-40').hide();
+        $('#page-41').hide();
+        $('#page-42').hide();
+        $('#page-43').hide();
+        $('#page-44').hide();
+        $('#page-45').hide();
+        $('#page-46').hide();
+        $('#page-47').hide();
+        $('#page-48').hide();
+        $('#page-49').hide();
+        $('#page-50').hide();
+        $('#page-51').hide();
+        $('#page-52').hide();
+        $('#page-53').hide();
+        $('#page-54').hide();
+        $('#page-55').hide();
+        $('#page-56').hide();
+        $('#page-57').hide();
+        $('#page-58').hide();
+        $('#kontakt').show();
+    });
+
+
+
+    $('#page-one').show();
+    $('#page-35').hide();
+    $('#page-36').hide();
+    $('#page-37').hide();
+    $('#page-38').hide();
+    $('#page-39').hide();
+    $('#page-40').hide();
+    $('#page-41').hide();
+    $('#page-42').hide();
+    $('#page-43').hide();
+    $('#page-44').hide();
+    $('#page-45').hide();
+    $('#page-46').hide();
+    $('#page-47').hide();
+    $('#page-48').hide();
+    $('#page-49').hide();
+    $('#page-50').hide();
+    $('#page-51').hide();
+    $('#page-52').hide();
+    $('#page-53').hide();
+    $('#page-54').hide();
+    $('#page-55').hide();
+    $('#page-56').hide();
+    $('#page-57').hide();
+    $('#page-58').hide();
+    $('#kontakt').hide();
+    $('.dropdown-trigger').dropdown();
+    $(document).ready(function () {
+        $('.parallax').parallax();
+    });
 </script>
 
 </html>
